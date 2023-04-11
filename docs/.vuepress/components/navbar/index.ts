@@ -2,7 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export const Navbar = navbar([
   "/",
-  { text: "前端", icon: "regular:window-maximize", link: "/zh/demo/" },
+  { text: "前端", icon: "window-maximize", link: "/zh/demo/" },
   {
     text: "指南",
     icon: "creative",
