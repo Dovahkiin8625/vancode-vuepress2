@@ -7,8 +7,8 @@ export default defineUserConfig({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: '文档演示',
-      description: 'vuepress-theme-hope 的文档演示',
+      title: 'Vancode',
+      description: 'Simplicity does not precede complexity, but follows it',
     },
   },
 

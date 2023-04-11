@@ -1,32 +1,33 @@
 import { hopeTheme } from 'vuepress-theme-hope';
 // import { enNavbar, zhNavbar } from './navbar/index.js';
 // import { enSidebar, zhSidebar } from './sidebar/index.js';
+import { Navbar } from './components/navbar/index.js';
 
 export default hopeTheme({
   hostname: 'https://www.vancode.top',
-
   author: {
     name: 'Vance.Liu',
     url: 'https://www.vancode.top',
   },
 
-  iconAssets: 'iconfont',
+  iconAssets: 'fontawesome',
+  iconPrefix: 'fas fa-',
+  logo: 'imgs/logo.jpg',
 
-  logo: '/logo.svg',
-
-  repo: 'vuepress-theme-hope/online-demo',
+  repo: 'Dovahkiin8625/vancode-vuepress2',
 
   docsDir: 'docs',
 
   locales: {
     '/': {
       // navbar
-      navbar: [],
+      navbar: Navbar,
 
       // sidebar
       sidebar: [],
 
       footer: 'Default footer',
+      // head: '',
 
       displayFooter: true,
 
