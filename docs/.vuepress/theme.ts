@@ -2,6 +2,7 @@ import { hopeTheme } from 'vuepress-theme-hope';
 // import { enNavbar, zhNavbar } from './navbar/index.js';
 // import { enSidebar, zhSidebar } from './sidebar/index.js';
 import { Navbar } from './components/navbar/index.js';
+// .vuepress/config.ts
 
 export default hopeTheme({
   hostname: 'https://www.vancode.top',
@@ -24,7 +25,18 @@ export default hopeTheme({
       navbar: Navbar,
 
       // sidebar
-      sidebar: [],
+      sidebar: {
+        "/Notes.前端素材/": "structure",
+
+        "/bar/": "structure",
+
+        // fallback
+        "/": [
+          "" /* / */,
+          "contact" /* /contact.html */,
+          "about" /* /about.html */,
+        ],
+      },
 
       footer: 'Default footer',
       // head: '',
@@ -45,10 +57,11 @@ export default hopeTheme({
   },
 
   plugins: {
-    comment: {
-      // @ts-ignore
-      provider: 'Waline',
-    },
+    autoCatalog: true,
+    // comment: {
+    //   // @ts-ignore
+    //   provider: 'Waline',
+    // },
 
     // Disable features you don’t want here
     mdEnhance: {
