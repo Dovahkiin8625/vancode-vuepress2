@@ -1,167 +1,111 @@
-import { hopeTheme } from 'vuepress-theme-hope';
-// import { enNavbar, zhNavbar } from './navbar/index.js';
-// import { enSidebar, zhSidebar } from './sidebar/index.js';
+import { hopeTheme } from "vuepress-theme-hope";
+// import {zhNavbar} from "./navbar";
+// import {zhSidebar} from "./sidebar";
 import { Navbar } from './components/navbar/index.js';
-// .vuepress/config.ts
-
+import { Sidebar } from './components/sidebar/index.js';
 export default hopeTheme({
-  hostname: 'https://www.vancode.top',
-  author: {
-    name: 'Vance.Liu',
-    url: 'https://www.vancode.top',
-  },
+    fullscreen: true,
 
-  iconAssets: 'fontawesome',
-  iconPrefix: 'fas fa-',
-  logo: 'imgs/logo.jpg',
-
-  repo: 'Dovahkiin8625/vancode-vuepress2',
-
-  docsDir: 'docs',
-
-  locales: {
-    '/': {
-      // navbar
-      navbar: Navbar,
-
-      // sidebar
-      sidebar: {
-        "/Notes.前端素材/": "structure",
-
-        "/bar/": "structure",
-
-        // fallback
-        "/": [
-          "" /* / */,
-          "contact" /* /contact.html */,
-          "about" /* /about.html */,
-        ],
-      },
-
-      footer: 'Default footer',
-      // head: '',
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: 'Edit this page on GitHub',
-      },
-    }
-  },
-
-  encrypt: {
-    config: {
-      '/demo/encrypt.html': ['1234'],
-      '/zh/demo/encrypt.html': ['1234'],
+    themeColor: {
+        blue: "#2196f3",
+        red: "#f26d6d",
+        green: "#3eaf7c",
+        orange: "#fb9b5f",
     },
-  },
 
-  plugins: {
-    autoCatalog: true,
-    // comment: {
-    //   // @ts-ignore
-    //   provider: 'Waline',
-    // },
+    hostname: 'http://www.vancode.top',
+    author: {
+        name: 'Vance.Liu',
+        url: 'http://www.vancode.top',
+    },
 
-    // Disable features you don’t want here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      chart: true,
-      codetabs: true,
-      // container: true,
-      // demo: true,
-      echarts: true,
-      figure: true,
-      flowchart: true,
-      gfm: true,
-      imgLazyload: true,
-      imgSize: true,
-      include: true,
-      katex: true,
-      mark: true,
-      mermaid: true,
-      playground: {
-        presets: ['ts', 'vue'],
-      },
-      presentation: {
-        plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
-      },
-      stylize: [
-        {
-          matcher: 'Recommended',
-          replacer: ({ tag }) => {
-            if (tag === 'em')
-              return {
-                tag: 'Badge',
-                attrs: { type: 'tip' },
-                content: 'Recommended',
-              };
-          },
+    // iconAssets: "//at.alicdn.com/t/c/font_3831129_6mpn8dhchwt.css",
+
+    iconAssets: 'fontawesome',
+    iconPrefix: 'fas fa-',
+    logo: 'imgs/logo.jpg',
+
+    repo: 'Dovahkiin8625/vancode-vuepress2',
+
+    docsDir: 'docs',
+
+
+    pageInfo: ["Author", "Original", "Date", "Category", "Tag", "Word", "ReadingTime"],
+
+    copyright: false,
+
+    // footer: '<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号: 沪ICP备2022029946号-2</a >',
+    displayFooter: true,
+
+    locales: {
+        "/": {
+            navbar: Navbar,
+
+            // sidebar
+            sidebar: Sidebar,
+
+            // footer: "默认页脚",
+
+            displayFooter: true,
+
+            // page meta
+            metaLocales: {
+                editLink: "在 GitHub 上编辑此页",
+            },
         },
-      ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      vPre: true,
-      vuePlayground: true,
     },
-
-    // uncomment these if you want a pwa
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cachePic: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
-  },
+    // hotReload: true,
+    plugins: {
+        // git: true,
+        autoCatalog: {
+            frontmatter: (path) => {
+                let resovl = path.split("/")
+                
+                return { title: resovl[resovl.length - 2] }
+            }
+        },
+        mdEnhance: {
+            align: true,
+            attrs: true,
+            chart: true,
+            codetabs: true,
+            // container: true,
+            // demo: true,
+            echarts: true,
+            figure: true,
+            flowchart: true,
+            gfm: true,
+            imgLazyload: true,
+            imgSize: true,
+            include: true,
+            katex: true,
+            mark: true,
+            mermaid: true,
+            playground: {
+                presets: ["ts", "vue"],
+            },
+            presentation: {
+                plugins: ["highlight", "math", "search", "notes", "zoom"],
+            },
+            stylize: [
+                {
+                    matcher: "Recommended",
+                    replacer: ({ tag }) => {
+                        if (tag === "em")
+                            return {
+                                tag: "Badge",
+                                attrs: { type: "tip" },
+                                content: "Recommended",
+                            };
+                    },
+                },
+            ],
+            sub: true,
+            sup: true,
+            tabs: true,
+            vPre: true,
+            vuePlayground: true,
+        },
+        copyCode: { fancy: false, },
+    },
 });

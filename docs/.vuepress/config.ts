@@ -1,4 +1,6 @@
 import { defineUserConfig } from 'vuepress';
+// import {path} from '@vuepress/utils'
+
 import theme from './theme.js';
 import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 
@@ -14,10 +16,5 @@ export default defineUserConfig({
   },
 
   theme,
-  plugins: [
-    // autoCatalogPlugin({
-      //插件选项
-    // }),
-  ],
-  // shouldPrefetch: false,
+  // plugins: [autoCatalogPlugin()],
 });

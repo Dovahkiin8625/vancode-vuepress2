@@ -2,109 +2,58 @@
 home: true
 icon: home
 title: 首页
-heroImage: /logo.svg
+heroImage: /imgs/logo.jpg
 heroText: Vancode
 tagline: Simplicity does not precede complexity, but follows it.
 actions:
   - text: Vancode 💡
-    link: /demo/
+    link: /front-end/
     type: primary
 
   - text: Docs
     link: /guide/
 
 features:
-  - title: Markdown Enhance
+  - title: 前端 Web Front End
     icon: markdown
-    details: Add align, sup/sub script, footnote, tasklist, tex, flowchart, diagram, mark and presentation support in markdown
-    link: https://theme-hope.vuejs.press/guide/markdown/
+    details: 前端技术文档 JavaScript, ES6, TypeScript, Vue.js, React
+    link: /front-end/
 
-  - title: Slide page
+  - title: 后端 Web Back End
     icon: slides
-    details: Adding slide pages to display things you like
-    link: https://theme-hope.vuejs.press/guide/layout/slides.html
+    details: 后端技术文档 Java, Python, Golang, Spring, Flask, Django
+    link: /back-end/
 
-  - title: Layout enhancement
+  - title: 算法 Algorithm
     icon: layout
-    details: Adding breadcrumb, footer, improved navbar, improved page nav and etc.
-    link: https://theme-hope.vuejs.press/guide/layout/
+    details: 算法基础, 机器学习, 深度学习, 计算机视觉
+    link: /algorithm/
 
-  - title: Pageviews and comments
+  - title: 架构 Architecture 
     icon: comment
-    details: Start pageview statistics and comment support with Waline
-    link: https://theme-hope.vuejs.press/guide/feature/comment.html
+    details: 负载均衡, 云原生, 微服务, 消息队列, 容器化
+    link: /architecture/
 
-  - title: Article information
+  - title: 数据库 Database
     icon: info
-    details: Add author, writing date, reading time, word count and other information to your article
-    link: https://theme-hope.vuejs.press/guide/feature/page-info.html
+    details: SQL基础, MySQL, MongoDB, InfluxDB, TDengine
+    link: /database/
 
-  - title: Blog support
+  - title: 物联网 Iot
     icon: blog
-    details: Listing your articles with their dates, tag and category with some awesome layouts
-    link: https://theme-hope.vuejs.press/guide/blog/
+    details: Thingsboard, Node-Red
+    link: /iot/
 
-  - title: Custom theme color
+  - title: 计算机基础
     icon: palette
-    details: Supports custom theme colors and allows users to switch between preset theme colors
-    link: https://theme-hope.vuejs.press/guide/interface/theme-color.html
+    details: 操作系统, 计算机组成原理, 计算机网络
+    link: /computer-basics/
 
-  - title: Dark Mode
+  - title: 其他
     icon: contrast
-    details: Switch between light and dark modes freely
-    link: https://theme-hope.vuejs.press/guide/interface/darkmode.html
-
-  - title: Full A11y support
-    icon: support
-    details: Full support of accessibility in your site
-    link: https://theme-hope.vuejs.press/guide/interface/accessibility.html
-
-  - title: Article Encryption
-    icon: lock
-    details: Encrypt you articles based on page links, so that only the one you want could see them
-    link: https://theme-hope.vuejs.press/guide/feature/encrypt.html
-
-  - title: Copy button
-    icon: copy
-    details: Copy codes with one click in code blocks
-    link: https://theme-hope.vuejs.press/guide/feature/copy-code.html
-
-  - title: Image preview
-    icon: pic
-    details: Support viewing, zooming, sharing your page images like a gallery
-    link: https://theme-hope.vuejs.press/guide/feature/photo-swipe.html
-
-  - title: SEO enhancement
-    icon: config
-    details: Optimize pages for search engines
-    link: https://theme-hope.vuejs.press/guide/advanced/seo.html
-
-  - title: Sitemap
-    icon: sitemap
-    details: Generate a Sitemap for your site
-    link: https://theme-hope.vuejs.press/guide/advanced/sitemap.html
-
-  - title: Feed support
-    icon: rss
-    details: Generate feed to allow users to subscribe it
-    link: https://theme-hope.vuejs.press/guide/advanced/feed.html
-
-  - title: PWA support
-    icon: mobile
-    details: Make your site more like an APP
-    link: https://theme-hope.vuejs.press/guide/advanced/pwa.html
-
-  - title: More new features
-    icon: more
-    details: Including icon support, fullscreen button, etc.
-    link: https://theme-hope.vuejs.press/guide/feature/
+    details: 版本控制, 运维, 生产力, 杂文
+    link: /others/
 
 copyright: false
 footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> | MIT Licensed, Copyright © 2019-present Mr.Hope
 ---
-
-This is an example of a project homepage. You can place your main content here.
-
-To use this layout, you need to set `home: true` in the page front matter.
-
-For related descriptions of configuration items, please see [Project HomePage Layout Config](https://theme-hope.vuejs.press/guide/layout/home/).

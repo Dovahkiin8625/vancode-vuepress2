@@ -4,36 +4,78 @@ export const Navbar = navbar([
   "/",
   {
     text: "前端",
-    icon: "window-maximize",
+    icon: "laptop-code",
     prefix: "/front-end/",
-    link: "/font-end",
+    // link: "/font-end/",
     children: [
-      { text: "javascript", link: "javascript" },
-      { text: "ES6", link: "es6" },
+      { text: "前端",icon: "laptop-code",link: ""},
+      { text: "JavaScript", link: "javascript" },
+      { text: "ECMAScript 6", link: "es6" },
+      { text: "TypeScript", link: "typescript" },
+      { text: "Vue.js", link: "vue" },
+      { text: "React", link: "react" },
+      { text: "前端素材", link: "前端素材" },
     ]
   },
   {
-    text: "指南",
-    icon: "creative",
-    prefix: "/zh/guide/",
-    children: [
-      {
-        text: "Bar",
-        icon: "creative",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "more", link: "" }],
-      },
-      {
-        text: "Foo",
-        icon: "config",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "more", link: "" }],
-      },
-    ],
+    text: "后端",
+    icon: "server",
+    prefix: "/back-end/",
+    children:[
+      { text: "后端",icon: "server",link: ""},
+      { text: "Java", link: "java" },
+      { text: "Python", link: "python" },
+      { text: "Golang", link: "golang" },
+      { text: "Spring", link: "spring" },
+      { text: "Flask", link: "flask" }
+    ]
   },
   {
-    text: "V2 文档",
-    icon: "note",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "算法",
+    icon: "window-maximize",
+    prefix: "/algorithm/",
+    children:[
+      { text: "算法",icon: "server",link: ""},
+      { text: "Java", link: "java" },
+      { text: "Python", link: "python" },
+      { text: "Golang", link: "golang" },
+      { text: "Spring", link: "spring" },
+      { text: "Flask", link: "flask" }
+    ]
   },
+  {
+    text: "架构",
+    icon: "bezier-curve",
+    prefix: "/front-end/",
+    link: ""
+  },
+  {
+    text: "数据库",
+    icon: "database",
+    prefix: "/front-end/",
+    link: ""
+  },
+  {
+    text: "物联网",
+    icon: "window-maximize",
+    prefix: "/front-end/",
+    link: ""
+  },
+  {
+    text: "计算机基础",
+    icon: "window-maximize",
+    prefix: "/front-end/",
+    link: ""
+  },
+  {
+    text: "其他",
+    icon: "window-maximize",
+    prefix: "/front-end/",
+    link: ""
+  },
+  // {
+  //   text: "V2 文档",
+  //   icon: "note",
+  //   link: "https://theme-hope.vuejs.press/zh/",
+  // },
 ]);
