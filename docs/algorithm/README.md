@@ -1,6 +1,6 @@
 ---
 title: 算法
-icon: layout
+icon: chart-line
 index: false
 category:
   - 算法

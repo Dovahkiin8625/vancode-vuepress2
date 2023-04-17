@@ -30,9 +30,22 @@ export const Sidebar = sidebar({
     },
     {
       text: "后端",
-      icon: "window-maximize",
+      icon: "server",
       prefix: "/back-end/",
       link: "/back-end",
+      children: [
+        { text: "Java", link: "java" },
+        { text: "Python", link: "python" },
+        { text: "Golang", link: "golang" },
+        { text: "Spring", link: "spring" },
+        { text: "Flask", link: "flask" },
+      ]
+    },
+    {
+      text: "算法",
+      icon: "chart-line",
+      prefix: "/algorithm/",
+      link: "/algorithm",
       children: [
         { text: "Java", link: "java" },
         { text: "Python", link: "python" },
