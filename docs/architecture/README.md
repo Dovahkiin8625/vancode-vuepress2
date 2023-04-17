@@ -1,11 +1,11 @@
 ---
-title: 后端
-icon: server
+title: 架构
+icon: comment
 index: false
 category:
-  - 后端
+  - 架构
 tag:
-  - 后端
+  - 架构
 ---
 
 <!-- 
@@ -15,13 +15,13 @@ If you met a bug while using, you can open an issue [here](https://github.com/vu
 
 ::: -->
 
-## [Java](java)🛠️
+## [负载均衡](负载均衡)🛠️
 
-## [Python](python)🛠️
+## [消息队列](消息队列)🛠️
 
-## [Golang](golang)🛠️
+## [Docker](docker)🛠️
 
-## [Spring](spring)🛠️
+## [Kubernetes](kubernetes)🛠️
 
-## [Flask](flask)🛠️
+
 

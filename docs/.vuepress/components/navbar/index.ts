@@ -4,7 +4,7 @@ export const Navbar = navbar([
   "/",
   {
     text: "前端",
-    icon: "laptop-code",
+    icon: "code",
     prefix: "/front-end/",
     // link: "/font-end/",
     children: [
@@ -32,46 +32,57 @@ export const Navbar = navbar([
   },
   {
     text: "算法",
-    icon: "window-maximize",
+    icon: "chart-line",
     prefix: "/algorithm/",
     children:[
       { text: "算法",icon: "server",link: ""},
-      { text: "Java", link: "java" },
-      { text: "Python", link: "python" },
-      { text: "Golang", link: "golang" },
-      { text: "Spring", link: "spring" },
-      { text: "Flask", link: "flask" }
+
     ]
   },
   {
     text: "架构",
-    icon: "bezier-curve",
-    prefix: "/front-end/",
-    link: ""
+    icon: "network-wired",
+    prefix: "/architecture/",
+    children:[
+      { text: "架构",icon: "network-wired",link: ""},
+
+    ]
   },
   {
     text: "数据库",
     icon: "database",
-    prefix: "/front-end/",
-    link: ""
+    prefix: "/database/",
+    children:[
+      { text: "数据库",icon: "database",link: ""},
+
+    ]
   },
   {
     text: "物联网",
-    icon: "window-maximize",
-    prefix: "/front-end/",
-    link: ""
+    icon: "code-branch",
+    prefix: "/iot/",
+    children:[
+      { text: "物联网",icon: "code-branch",link: ""},
+
+    ]
   },
   {
     text: "计算机基础",
-    icon: "window-maximize",
-    prefix: "/front-end/",
-    link: ""
+    icon: "laptop",
+    prefix: "/computer-basics/",
+    children:[
+      { text: "计算机基础",icon: "laptop",link: ""},
+
+    ]
   },
   {
     text: "其他",
-    icon: "window-maximize",
-    prefix: "/front-end/",
-    link: ""
+    icon: "magic",
+    prefix: "/others/",
+    children:[
+      { text: "其他",icon: "magic",link: ""},
+
+    ]
   },
   // {
   //   text: "V2 文档",

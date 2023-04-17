@@ -1,11 +1,11 @@
 ---
-title: 后端
-icon: server
+title: 算法
+icon: layout
 index: false
 category:
-  - 后端
+  - 算法
 tag:
-  - 后端
+  - 算法
 ---
 
 <!-- 
@@ -15,13 +15,9 @@ If you met a bug while using, you can open an issue [here](https://github.com/vu
 
 ::: -->
 
-## [Java](java)🛠️
+## [算法基础](basics)🛠️
 
-## [Python](python)🛠️
+## [计算机视觉](computervision)🛠️
 
-## [Golang](golang)🛠️
-
-## [Spring](spring)🛠️
-
-## [Flask](flask)🛠️
+## [机器学习](machinelearning)🛠️
 
